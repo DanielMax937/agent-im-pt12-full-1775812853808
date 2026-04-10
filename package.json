@@ -2,6 +2,10 @@
   "name": "kanban-e2e",
   "private": true,
   "scripts": {
-    "test": "node -e \"process.exit(0)\""
+    "test": "jest",
+    "validate": "jest --coverage --coverageReporters=json-summary"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
   }
 }
